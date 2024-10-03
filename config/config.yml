@@ -6,7 +6,7 @@ imports:
 parameters:
     # Some parameter values are not set from environment variables because Symfony service container build
     # depends on them. These parameter values cannot be changed in runtime without the application cache rebuild.
-    
+
     database_server_version: '13.7'
     secret: '%env(ORO_SECRET)%'
     database_dsn: '%env(ORO_DB_DSN)%'
@@ -27,7 +27,7 @@ parameters:
     log_path: '%env(resolve:ORO_LOG_PATH)%'
 
     env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
-    env(ORO_DB_URL): 'postgresql://root@127.0.0.1/b2b_crm_dev'
+    env(ORO_DB_URL): 'postgresql://root@oro-postgres/b2b_crm_dev'
     env(ORO_DB_DSN): '%env(ORO_DB_URL)%'
     env(ORO_MAILER_DSN): 'native://default'
     env(ORO_SEARCH_URL): 'orm:'
