@@ -27,7 +27,7 @@ parameters:
     log_path: '%env(resolve:ORO_LOG_PATH)%'
 
     env(ORO_SECRET): ThisTokenIsNotSoSecretChangeIt
-    env(ORO_DB_URL): 'postgresql://root@20.233.233.234/b2b_crm_dev'
+    env(ORO_DB_URL): 'postgresql://root@20.233.232.100/b2b_crm_dev'
     env(ORO_DB_DSN): '%env(ORO_DB_URL)%'
     env(ORO_MAILER_DSN): 'native://default'
     env(ORO_SEARCH_URL): 'orm:'
